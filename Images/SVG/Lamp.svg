@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.32 97.43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff733;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff733;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="tracés">
+    <g>
+      <path class="cls-2" d="M72.63,51.65c0-15.11-12.72-27.25-28.03-26.3-13.23.82-23.94,11.66-24.63,24.89-.53,10.23,4.78,19.26,12.88,24.07l-.39,11.61c0,5.53,4.48,10.01,10.01,10.01h8.35c5.53,0,10.01-4.48,10.01-10.01l.39-12.58c6.89-4.75,11.41-12.7,11.41-21.7Z"/>
+      <rect class="cls-1" x="44.79" y="0" width="3.72" height="14.28" rx="1.49" ry="1.49"/>
+      <rect class="cls-1" x="68.78" y="7.34" width="3.72" height="14.28" rx="1.49" ry="1.49" transform="translate(26.21 -42.32) rotate(40.39)"/>
+      <rect class="cls-1" x="85.02" y="23.38" width="3.72" height="14.28" rx="1.49" ry="1.49" transform="translate(65.72 -59.1) rotate(57.36)"/>
+      <rect class="cls-1" x="4.17" y="23.38" width="3.72" height="14.28" rx="1.49" ry="1.49" transform="translate(33.19 45.7) rotate(130.39)"/>
+      <rect class="cls-1" x="19.38" y="7.14" width="3.72" height="14.28" rx="1.49" ry="1.49" transform="translate(46.69 11.54) rotate(139.93)"/>
+    </g>
+  </g>
+</svg>

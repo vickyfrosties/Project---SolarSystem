@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encyclopédie</title>
+    <link rel="icon" type="image/x-icon" href="../Images/SVG/Logo-White.svg">
+
+
+    <!-- les polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="../js/encyclopedie.js"></script>
+    <!-- <script defer src="../js/traduction.js"></script> -->
+    <link rel="stylesheet" href="../css/encyclopedie.css">
+</head>
+<body>
+    <header>
+        <nav class="first-nav">
+            <div class="logo-div">
+                <a href="../html/index.html">
+                    <img src="../Images/SVG/Logo-White.svg" alt="Logo Officiel">
+                </a>
+            </div>
+            <h1 id="titre" >Le Système Solaire</h1>
+
+            <div class="alien-div">
+                <img id="alien" src="../Images/Alien.png" alt="Petit alien">
+            </div>
+        </nav>
+
+        <nav class="nav-bar-sticky">
+            <ul>
+                <li>
+                    <div>
+                        
+                        <a href="../html/index.html"><img src="../Images/SVG/Accueil.svg" alt="Page d'accueil">
+                            Accueil
+                        </a>
+                    
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="../html/encyclopédie.html"><img src="../Images/SVG/Apprendre.svg" alt="Page encyclopedie">
+                        <p>Apprendre</p>
+                        </a> 
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="../html/jeux.html"><img src="../Images/SVG/Jouer.svg" alt="Page jeux">
+                        Jouer</a>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="../html/contact.html"><img src="../Images/SVG/Contact.svg" alt="Page Contact">
+                    Contacte-nous</a>
+                        
+                    </div>    
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="btn-top">
+            <img src="../Images/SVG/Asset 12.svg" alt="Rocket button">
+        </div>
+        <section class="first-section">
+            <div class="andromeda">
+                    <img src="../Images/Andromeda.jpg" alt="Andromeda Galaxy">
+            </div>
+
+            <div class="intro">
+                <div class="blop">   
+                    <img id="blop-2" src="../Images/SVG/Blop-2.svg" alt="Asset">
+                </div>
+                <div class="blop">   
+                    <img id="blop-5" src="../Images/SVG/Blop-5.svg" alt="Asset">
+                </div>
+                <h2>
+                    Notre système solaire se trouve dans la <span class="magenta-text">galaxie</span> de la <span class="magenta-text">Voie Lactée</span> et est situé dans un bras spiral externe. C'est là que nous appelons « chez nous ». Le système solaire est composé d'acteurs majeurs et mineurs, qui interagissent tous les uns avec les autres.
+                    <br>
+                    <br>
+                    Le système solaire est constitué de notre <span class="magenta-text">soleil</span>, qui est une <span class="magenta-text">étoile</span>, et de tout ce que sa <span class="magenta-text">gravité</span> affecte. Les <span class="magenta-text">planètes</span>  de notre <span class="magenta-text" >système solaire</span> sont <span class="magenta-text">Mercure</span>, <span class="magenta-text">Vénus</span>, la <span class="magenta-text">Terre</span>, <span class="magenta-text">Mars</span>, <span class="magenta-text">Jupiter</span>, <span class="magenta-text">Saturne</span>, <span class="magenta-text">Uranus</span> et <span class="magenta-text">Neptune</span>.
+                    <br>
+                    <br>
+                    Il existe également des <span class="magenta-text">planètes naines</span>  comme <span class="magenta-text">Pluton</span>, des dizaines de <span class="magenta-text">lunes</span> et des millions d'<span class="magenta-text">astéroïdes</span>, de <span class="magenta-text">comètes</span> et de <span class="magenta-text">météoroïtes</span>  de toutes formes et tailles.
+                </h2>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="title-second-section">
+                <img src="../Images/astronaute-1.png" alt="Petit astronaute">
+                <h2>Voyons les choses en grand !</h2>
+            </div>
+            
+            <div class="cards-container">
+                <div class="second-container"></div>
+            </div>
+           
+        </section>
+
+        <section class="third-section">
+            <div class="container">
+                <div class="lamp-div">
+                    <img src="../Images/SVG/Lamp.svg" alt="">
+                </div>
+                
+                <div class="fact-text">
+                    <h3 id="first-h3">Le savais-tu ?</h3>
+                    <h3 id="fun-fact"></h3>
+                    <h3>Il y a plus d'étoiles dans l'espace que de graines de sable sur toutes les plages de la Terre. Elles se comptent par milliards ! </h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="fourth-section">
+            <h2>L'image du jour</h2>
+            <button id="btn-click">CLIQUE-ICI !</button>
+            <h3 id="title-img-nasa"></h3>
+            <img id="img-nasa" src="" alt="">
+            <p id="copyright"></p>
+            <h3 id="explanation-img-nasa"></h3>
+        </section>
+    </main>
+
+    <footer>
+        <div id="logo-footer">
+            <img src="../Images/SVG/Logo-White.svg" alt="Logo Officiel">
+        </div>
+        <div class="container-RS">
+
+            <div class="RS">
+                <img src="../Images/SVG/Contact-footer.svg" alt="Contact">
+                <h3>
+                    <a href="../html/contact.html">Contact</a>
+                </h3>
+            </div>
+
+            <div class="RS">
+                <img src="../Images/SVG/Instagram.svg" alt="Instagram">
+                <h3> <a href="https://www.instagram.com/" target="_blank">Instagram</a></h3>
+            </div>
+
+            <div class="RS">
+                <img src="../Images/SVG/X.svg" alt="X">
+                <h3><a href="https://x.com/?lang=fr" target="_blank">X</a></h3>
+            </div>
+
+            <div class="RS">
+                <img src="../Images/SVG/LinkedIn.svg" alt="LinkedIn">
+                <h3><a href="https://fr.linkedin.com/" target="_blank">LinkedIn</a></h3>
+            </div>
+            
+        </div>
+
+        <div class="container-conditions">
+            <div class="mentions-legales">
+                <h3>© Vicky Frosties. Tout droits réservés.</h3>
+            </div>
+            <div class="conditions">
+                <h3>Politique de confidentialité</h3>
+                <h3>Conditions d'utilisation</h3>
+                <h3><a href="../html/copyright.html">Utilisation d'images</a></h3>
+            </div>
+        </div>
+</footer>
+
+</body>
+</html>

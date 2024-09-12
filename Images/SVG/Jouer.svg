@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.39 107.73">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 2.64px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #6a49e7;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke-width: 1.84px;
+      }
+    </style>
+  </defs>
+  <g id="tracés">
+    <g>
+      <rect class="cls-3" x="55.63" y="38.2" width="94.68" height="42.55" rx="21.27" ry="21.27" transform="translate(162.45 -43.5) rotate(90)"/>
+      <rect class="cls-3" x="-23.83" y="38.2" width="94.68" height="42.55" rx="21.27" ry="21.27" transform="translate(82.99 35.96) rotate(90)"/>
+      <rect class="cls-1" x="1.32" y="1.32" width="123.75" height="66.95" rx="32.83" ry="32.83"/>
+      <line class="cls-2" x1="39.01" y1="21.4" x2="39.01" y2="48.28"/>
+      <line class="cls-2" x1="24.56" y1="34.84" x2="53.72" y2="34.84"/>
+      <circle class="cls-2" cx="81.62" cy="45.49" r="5"/>
+      <circle class="cls-2" cx="96.83" cy="27.72" r="5"/>
+    </g>
+  </g>
+</svg>

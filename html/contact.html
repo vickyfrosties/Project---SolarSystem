@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="../Images/SVG/Logo-White.svg">
+
+
+    <!-- les polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script defer src="../js/contact.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="first-nav">
+            <div class="logo-div">
+                <a href="../html/index.html">
+                    <img src="../Images/SVG/Logo-White.svg" alt="Logo">
+                </a>
+            </div>
+            <h1 id="titre">Le Système Solaire</h1>
+            <div class="alien-div">
+                <img id="alien" src="../Images/Alien.png" alt="Petit alien">
+            </div>
+        </nav>
+
+        <nav class="nav-bar-sticky">
+            <ul>
+                <li>
+                    <div>
+                        <a href="../html/index.html">
+                            <img src="../Images/SVG/Accueil.svg" alt="">Accueil
+                        </a>
+                    
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="../html/encyclopédie.html"><img src="../Images/SVG/Apprendre.svg" alt="">
+                        <p>Apprendre</p>
+                        </a>
+
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="../html/jeux.html"><img src="../Images/SVG/Jouer.svg" alt="">
+                        Jouer</a>
+                        
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        
+                    <a href="../html/contact.html"><img src="../Images/SVG/Contact.svg" alt="">Contacte-nous</a>
+                    </div>    
+                </li>
+            </ul>
+        </nav>     
+    </header>
+
+    <main>
+        <div id="top" class="btn-top">
+            <img src="../Images/SVG/Asset 12.svg" alt="">
+        </div>
+
+        <h2 id="contact-titre">Contacte-nous !</h2>
+        <h3 id="p1">Si tu as des questions, des commentaires à nous donner n'hésite pas à nous les envoyer en remplissant ce formulaire. On te recontactera le plus vite possible !</h3>
+
+        <section id="first-section" class="container-form">
+            <form name="contactForm" action="" method="post">
+                <section class="first-section">
+
+                    <legend>Informations</legend>
+
+                    <div class="first-section-form">
+                        <div>
+                            <label id="label-name" for="name">Nom <span aria-hidden="true" class="asterisk">*</span></label>
+                            <input aria-label="required-name" id="name" type="text" placeholder="Neil" pattern="[a-zA-Z]+" required maxlength="30" autofocus>
+                            
+                        </div>
+                        
+                        <div>
+                            <label id="label-lastname" for="lastname">Prénom <span class="asterisk">*</span></label>
+                            <input aria-label="required-lastname" id="lastname" type="text" placeholder="Armstrong" pattern="[a-zA-Z]+" required maxlength="30">
+                        </div>
+
+                    </div>
+
+                    <div class="mail">
+                        <label id="label-mail" for="mail">Email <span class="asterisk">*</span>
+                        </label>
+                        <input aria-label="required-mail" type="email" placeholder="missionapollo@hotmail.com" required id="email">
+                    </div>
+
+                    <div class="message">
+                        <label id="label-text" for="text-area">Ton message <span class="asterisk">*</span>
+                        </label>
+                        <textarea spellcheck rows="10" cols="30" aria-label="required-text-description" name="textarea" id="text-area" required placeholder="Je veux devenir astronaute !" pattern="[a-zA-Z]+"></textarea>
+                    </div>
+                    <button type="button" id="submit">Envoyer</button>
+                </section>
+
+                <section class="second-section">
+                    <legend>Notifications</legend>
+
+                    <h3 id="question-1">Souhaites-tu recevoir par mail des actualités sur l'espace et les activités à faire ?</h3>
+                    
+                    <div class="radio-div">
+                        <input type="radio" id="chk1" name="chk1" value="oui" required>
+                        <label for="chk1">Oui</label>
+    
+                        <input type="radio" id="chk2" name="chk1" value="non" required>
+                        <label for="chk2">Non</label>
+
+                    </div>
+                    <button type="button" id="submit-notifications">Envoyer</button>
+        
+
+                </section>
+            </form>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <div id="logo-footer">
+            <img src="../Images/SVG/Logo-White.svg" alt="Logo Officiel">
+        </div>
+        <div class="container-RS">
+
+            <div class="RS">
+                <img src="../Images/SVG/Contact-footer.svg" alt="">
+                <h3>
+                    <a href="../html/contact.html">Contact</a>
+                </h3>
+            </div>
+
+            <div class="RS">
+                <img src="../Images/SVG/Instagram.svg" alt="">
+                <h3> <a href="https://www.instagram.com/" target="_blank">Instagram</a></h3>
+            </div>
+
+            <div class="RS">
+                <img src="../Images/SVG/X.svg" alt="">
+                <h3><a href="https://x.com/?lang=fr" target="_blank">X</a></h3>
+            </div>
+
+            <div class="RS">
+                <img src="../Images/SVG/LinkedIn.svg" alt="">
+                <h3><a href="https://fr.linkedin.com/" target="_blank">LinkedIn</a></h3>
+            </div>
+            
+        </div>
+
+        <div class="container-conditions">
+            <div class="mentions-legales">
+                <h3>© Vicky Frosties. Tout droits réservés.</h3>
+            </div>
+            <div class="conditions">
+                <h3>Politique de confidentialité</h3>
+                <h3>Conditions d'utilisation</h3>
+                <h3>Utilisation d'images</h3>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
