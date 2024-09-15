@@ -1,5 +1,7 @@
 const PLAY_BTN = document.getElementById("start-game");
 const H3 = document.getElementById("lancement");
+const SUBMIT = document.getElementById("submit");
+const CONTAINER = document.getElementById("questionnaire-bloc");
 
 const QUESTIONS = [
     {
@@ -53,27 +55,58 @@ const QUESTIONS = [
       bonneReponse: "Soleil"
     }
   ];
+console.log(QUESTIONS)
+
+function startQuizz() {
+
+PLAY_BTN.removeEventListener("click", startQuizz);
+ 
+      setTimeout(() => {
+          H3.style.display = "none";
+          PLAY_BTN.style.display = "none";
   
-PLAY_BTN.addEventListener("click", () => {
-    setTimeout(() => {
-        H3.style.display = "none";
-        PLAY_BTN.style.display = "none";
-
-        const CONTAINER = document.getElementById("questionnaire-bloc");
-        
-        const QUESTION = document.createElement("p");
-        CONTAINER.append(QUESTION);
-        const RANDOM_QUESTION = Math.floor(Math.random() * QUESTIONS.length);
-        QUESTION.textContent = QUESTIONS[RANDOM_QUESTION].question;
-        const ANSWERS = QUESTIONS[RANDOM_QUESTION].reponses;
-
-        ANSWERS.forEach((response, index) => {
-            const BTN_ANSWERS = document.createElement("button");
-            BTN_ANSWERS.textContent = `${index + 1}. ${response}`;
+          const QUESTION = document.createElement("p");
+          const BTN_CONTAINER = document.createElement("div");
+          CONTAINER.append(QUESTION, BTN_CONTAINER, SUBMIT);
+  
+          const RANDOM_QUESTION = Math.floor(Math.random() * QUESTIONS.length);
+          QUESTION.textContent = QUESTIONS[RANDOM_QUESTION].question;
+          const ANSWERS = QUESTIONS[RANDOM_QUESTION].reponses;
+  
+          ANSWERS.forEach((response, index) => {
+              const BTN_ANSWERS = document.createElement("button");
+              BTN_ANSWERS.textContent = `${index + 1}. ${response}`;
+              SUBMIT.style.display = "block";
+              QUESTION.classList.add("question");
+              BTN_ANSWERS.classList.add("choices");
+              BTN_CONTAINER.classList.add("btn-container");
+              BTN_CONTAINER.appendChild(BTN_ANSWERS);
+          });
+      }, 1000)  
+    }
     
-            QUESTION.classList.add("question");
-            BTN_ANSWERS.classList.add("choices");
-            CONTAINER.appendChild(BTN_ANSWERS);
-        });
-    }, 1000)
-})
+  PLAY_BTN.addEventListener("click", startQuizz);
+    
+    // Résolution de la partie
+   
+    function quizzSolution() {
+      // prendre la valeur du bouton ou des boutons cliqué(s) pour voir si ça correspond avec la valeur de bonneReponse
+      let PLAYERS_CHOICE = "";
+      const ANSWERS_CONTAINER = CONTAINER.querySelectorAll(".choices");
+
+      for(let i = 0; i <QUESTIONS.length; i++){
+
+        if(PLAYERS_CHOICE === QUESTIONS[i].bonneReponse) {
+          alert("gg");
+          ANSWERS_CONTAINER.style.color = "green";
+        }
+
+        else{
+          ANSWERS_CONTAINER.style.color = "red";
+        }
+      }
+    }
+
+    SUBMIT.addEventListener("click", quizzSolution);
+
+
